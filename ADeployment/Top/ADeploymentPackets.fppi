@@ -161,6 +161,11 @@ telemetry packets ADeploymentPackets {
     CdhCore.version.CustomVersion10
   }
 
+  packet Ping group 0 {
+    ProjectCore.pingA.numPing
+    ProjectCore.pingA.numPong
+  }
+
 } omit {
   CdhCore.cmdDisp.CommandErrors
 }

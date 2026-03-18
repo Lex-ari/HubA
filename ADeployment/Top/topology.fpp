@@ -136,8 +136,6 @@ module ADeployment {
     connections AtoBDriverConnections {
       ProjectCore.AtoBDriver.allocate -> ComCcsds.commsBufferManager.bufferGetCallee
       ProjectCore.AtoBDriver.deallocate -> ComCcsds.commsBufferManager.bufferSendIn
-
-      ProjectCore.AtoBHub.tlmOut -> ComCcsds.tlmSend.recv
     }
 
     connections HubBuffers {
