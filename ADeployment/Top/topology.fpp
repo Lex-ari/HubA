@@ -129,7 +129,8 @@ module ADeployment {
     }
 
     connections ADeployment {
-      
+      ProjectCore.AtoBHub.tlmOut -> CdhCore.tlmSend.TlmRecv
+      ProjectCore.AtoBHub.eventOut -> CdhCore.events.LogRecv
     }
 
 

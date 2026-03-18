@@ -4,7 +4,7 @@ module ProjectCore {
     instance AtoBDriver: Drv.TcpServer base id 0x0100 \
     {
         phase Fpp.ToCpp.Phases.configComponents """
-        ProjectCore::AtoBDriver.configure("127.0.0.1", 5020);
+        ProjectCore::AtoBDriver.configure("127.0.0.1", 5020, 1, 0, 2048);
         """
 
         phase Fpp.ToCpp.Phases.startTasks """
