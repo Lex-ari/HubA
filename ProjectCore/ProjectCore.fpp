@@ -1,5 +1,5 @@
 module ProjectCore {
-    include "../lib/Interfaces/HubInterface.fpp"
+    include "../lib/HubInterfaces/HubInterface.fpp"
 
     instance AtoBDriver: Drv.TcpServer base id 0x0100 \
     {
